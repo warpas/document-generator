@@ -39,6 +39,7 @@ defmodule ResumeGenerator.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:credo, "~> 0.9.0", only: [:dev, :test]},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"}
     ]

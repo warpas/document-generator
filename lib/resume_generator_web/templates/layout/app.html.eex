@@ -17,6 +17,8 @@
         <nav role="navigation">
           <ul class="nav nav-pills pull-right">
             <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+            <li><a href="/resumes">Resumes list</a></li>
+            <li><a href="/resumes">Single Resume</a></li>
           </ul>
         </nav>
         <span class="logo"></span>

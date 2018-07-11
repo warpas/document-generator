@@ -17,6 +17,10 @@ defmodule ResumeGeneratorWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    # TODO: implement standard CRUD
+    # get "/resumes", ResumeController, :index
+    get "/resumes", ResumeController, :show
+    # get "/resumes/id", ResumeController, :show
   end
 
   # Other scopes may use custom stacks.
