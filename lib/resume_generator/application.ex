@@ -1,4 +1,7 @@
 defmodule ResumeGenerator.Application do
+  @moduledoc """
+  The boundary for the ResumeGenerator base Application.
+  """
   use Application
 
   # See https://hexdocs.pm/elixir/Application.html
