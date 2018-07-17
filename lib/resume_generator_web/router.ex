@@ -20,6 +20,7 @@ defmodule ResumeGeneratorWeb.Router do
     # get "/resumes", ResumeController, :index
     # get "/resumes/:id", ResumeController, :show
     resources "/resumes", ResumeController, only: [:index, :show]
+    resources "/users", UserController, only: [:show]
   end
 
   # Other scopes may use custom stacks.
