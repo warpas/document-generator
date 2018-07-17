@@ -1,7 +1,6 @@
 defmodule ResumeGeneratorWeb.ResumeControllerTest do
   use ResumeGeneratorWeb.ConnCase
 
-  describe "resume CRUD" do
     # TODO: Make both setup clauses work, then choose one
     # setup [
     #   :create_resume
@@ -12,17 +11,22 @@ defmodule ResumeGeneratorWeb.ResumeControllerTest do
     # end
 
 
-    test "GET /resumes", %{conn: conn} do
+  describe "resume index action" do
+    @tag :web
+    test "should succeed", %{conn: conn} do
       conn = get conn, "/resumes"
       assert html_response(conn, 200) =~ "There will be a list of resume documents here at some point. "
     end
+  end
 
-    # TODO: Add test for show action
-    test "resumes show action", %{conn: conn} do
+  # TODO: Add test for show action
+  describe "resume show action" do
+    @tag :web
+    test "should succeed with valid ID", %{conn: conn} do
       # IO.inspect(conn, label: "conn")
       # resume = build(:resume)
       resume_attrs = %{}
-      {:ok, resume} = ResumeGenerator.Documents.Resume.new(resume_attrs)
+      {:ok, resume} = ResumeGenerator.Documents.create_resume(resume_attrs)
       conn = get conn, "/resumes/#{resume.id}"
       assert html_response(conn, 200) =~ "The input forms below will start working at some point."
     end

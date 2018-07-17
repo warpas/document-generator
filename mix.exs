@@ -41,7 +41,8 @@ defmodule ResumeGenerator.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:credo, "~> 0.9.0", only: [:dev, :test]},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:uuid, "~> 1.1"}
     ]
   end
 
