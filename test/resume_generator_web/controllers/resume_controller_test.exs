@@ -27,7 +27,7 @@ defmodule ResumeGeneratorWeb.ResumeControllerTest do
       # resume = build(:resume)
       resume_attrs = %{}
       {:ok, resume} = ResumeGenerator.Documents.create_resume(resume_attrs)
-      conn = get conn, "/resumes/#{resume.id}"
+      conn = get conn, "/resumes/#{resume.uuid}"
       assert html_response(conn, 200) =~ "The input forms below will start working at some point."
     end
   end
