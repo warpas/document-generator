@@ -21,6 +21,7 @@ defmodule ResumeGenerator.DataCase do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
+      import ResumeGenerator.Factory
       import ResumeGenerator.DataCase
     end
   end
