@@ -2,6 +2,10 @@ defmodule ResumeGeneratorWeb.ResumeControllerTest do
   use ResumeGeneratorWeb.ConnCase
   use ResumeGenerator.DataCase
 
+  setup do
+    {:ok, resume: insert(:resume)}
+  end
+
   describe "resume index action" do
     @tag :web
     test "should succeed", %{conn: conn} do
@@ -13,8 +17,7 @@ defmodule ResumeGeneratorWeb.ResumeControllerTest do
   # TODO: Add test for show action
   describe "resume show action" do
     @tag :web
-    test "should succeed with valid ID", %{conn: conn} do
-      resume = insert(:resume)
+    test "should succeed with valid ID", %{conn: conn, resume: resume} do
       conn = get conn, "/resumes/#{resume.uuid}"
       assert html_response(conn, 200) =~ "The input forms below will start working at some point."
     end
