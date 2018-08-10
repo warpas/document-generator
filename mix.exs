@@ -5,7 +5,7 @@ defmodule ResumeGenerator.Mixfile do
     [
       app: :resume_generator,
       version: "0.0.1",
-      elixir: "~> 1.4",
+      elixir: "~> 1.6.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -40,8 +40,10 @@ defmodule ResumeGenerator.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:credo, "~> 0.9.0", only: [:dev, :test]},
+      {:ex_machina, "~> 2.2", only: :test},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:uuid, "~> 1.1"}
     ]
   end
 
