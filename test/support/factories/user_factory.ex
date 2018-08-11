@@ -1,5 +1,5 @@
-defmodule ResumeGenerator.Factories.UserFactory do
-  alias ResumeGenerator.Accounts.User
+defmodule DocumentGenerator.Factories.UserFactory do
+  alias DocumentGenerator.Accounts.User
 
   defmacro __using__(_opts) do
     quote do

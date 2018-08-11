@@ -1,4 +1,4 @@
-defmodule ResumeGenerator.Repo.Migrations.AddUsersTable do
+defmodule DocumentGenerator.Repo.Migrations.AddUsersTable do
   use Ecto.Migration
 
   def change do

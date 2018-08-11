@@ -1,4 +1,4 @@
-defmodule ResumeGenerator.DataCase do
+defmodule DocumentGenerator.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,21 +16,21 @@ defmodule ResumeGenerator.DataCase do
 
   using do
     quote do
-      alias ResumeGenerator.Repo
+      alias DocumentGenerator.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import ResumeGenerator.Factory
-      import ResumeGenerator.DataCase
+      import DocumentGenerator.Factory
+      import DocumentGenerator.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ResumeGenerator.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(DocumentGenerator.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(ResumeGenerator.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(DocumentGenerator.Repo, {:shared, self()})
     end
 
     :ok

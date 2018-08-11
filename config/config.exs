@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :resume_generator,
-  ecto_repos: [ResumeGenerator.Repo]
+config :document_generator,
+  ecto_repos: [DocumentGenerator.Repo]
 
 # Configures the endpoint
-config :resume_generator, ResumeGeneratorWeb.Endpoint,
+config :document_generator, DocumentGeneratorWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "EF2loGSclWwA3HaVnQQukVglRHzWYj8I21ZavqczRwx4ET1igZA3TmWCmqxPbj39",
-  render_errors: [view: ResumeGeneratorWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: ResumeGenerator.PubSub,
+  render_errors: [view: DocumentGeneratorWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: DocumentGenerator.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

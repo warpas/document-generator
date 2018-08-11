@@ -1,6 +1,6 @@
-# ResumeGenerator
+# DocumentGenerator
 
-Elixir application for formatting your resume
+Elixir application for formatting your documents
 
 To start your Phoenix server:
 

@@ -1,9 +1,9 @@
-defmodule ResumeGenerator.Mixfile do
+defmodule DocumentGenerator.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :resume_generator,
+      app: :document_generator,
       version: "0.0.1",
       elixir: "~> 1.6.6",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule ResumeGenerator.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {ResumeGenerator.Application, []},
+      mod: {DocumentGenerator.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
