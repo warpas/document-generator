@@ -7,10 +7,10 @@ defmodule DocumentGenerator.Accounts.User do
   @optional_attrs [:name, :phone, :website]
 
   schema "users" do
-    field :email, :string
-    field :name, :string
-    field :phone, :string
-    field :website, :string
+    field(:email, :string)
+    field(:name, :string)
+    field(:phone, :string)
+    field(:website, :string)
 
     timestamps()
   end

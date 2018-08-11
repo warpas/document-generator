@@ -25,9 +25,7 @@ defmodule DocumentGeneratorWeb.ChannelCase do
     end
   end
 
-
   setup tags do
     :ok
   end
-
 end

@@ -6,9 +6,24 @@ defmodule DocumentGenerator.DocumentsTest do
   describe "resumes" do
     alias DocumentGenerator.Documents.Resume
 
-    @valid_attrs %{interests: "some interests", languages: "some languages", programming_languages: "some programming_languages", technologies: "some technologies"}
-    @update_attrs %{interests: "some updated interests", languages: "some updated languages", programming_languages: "some updated programming_languages", technologies: "some updated technologies"}
-    @invalid_attrs %{interests: nil, languages: nil, programming_languages: nil, technologies: nil}
+    @valid_attrs %{
+      interests: "some interests",
+      languages: "some languages",
+      programming_languages: "some programming_languages",
+      technologies: "some technologies"
+    }
+    @update_attrs %{
+      interests: "some updated interests",
+      languages: "some updated languages",
+      programming_languages: "some updated programming_languages",
+      technologies: "some updated technologies"
+    }
+    @invalid_attrs %{
+      interests: nil,
+      languages: nil,
+      programming_languages: nil,
+      technologies: nil
+    }
 
     def resume_fixture(attrs \\ %{}) do
       {:ok, resume} =

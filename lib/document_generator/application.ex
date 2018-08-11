@@ -14,7 +14,7 @@ defmodule DocumentGenerator.Application do
       # Start the Ecto repository
       supervisor(DocumentGenerator.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(DocumentGeneratorWeb.Endpoint, []),
+      supervisor(DocumentGeneratorWeb.Endpoint, [])
       # Start your own worker by calling: DocumentGenerator.Worker.start_link(arg1, arg2, arg3)
       # worker(DocumentGenerator.Worker, [arg1, arg2, arg3]),
     ]

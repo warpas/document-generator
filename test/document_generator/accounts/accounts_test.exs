@@ -6,8 +6,18 @@ defmodule DocumentGenerator.AccountsTest do
   describe "users" do
     alias DocumentGenerator.Accounts.User
 
-    @valid_attrs %{email: "some email", name: "some name", phone: "some phone", website: "some website"}
-    @update_attrs %{email: "some updated email", name: "some updated name", phone: "some updated phone", website: "some updated website"}
+    @valid_attrs %{
+      email: "some email",
+      name: "some name",
+      phone: "some phone",
+      website: "some website"
+    }
+    @update_attrs %{
+      email: "some updated email",
+      name: "some updated name",
+      phone: "some updated phone",
+      website: "some updated website"
+    }
     @invalid_attrs %{email: nil, name: nil, phone: nil, website: nil}
 
     def user_fixture(attrs \\ %{}) do

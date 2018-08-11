@@ -8,10 +8,10 @@ defmodule DocumentGeneratorWeb.UserControllerTest do
 
   describe "user show action" do
     test "should succeed with valid ID", %{conn: conn, user: user} do
-      conn = get conn, "/users/#{user.uuid}"
+      conn = get(conn, "/users/#{user.uuid}")
+
       assert html_response(conn, 200) =~
-        "There will be user information here, willingly given. And a 'delete my info' button"
+               "There will be user information here, willingly given. And a 'delete my info' button"
     end
   end
-
 end

@@ -11,6 +11,5 @@ defmodule DocumentGenerator.Repo.Migrations.CreateResumes do
 
       timestamps()
     end
-
   end
 end
