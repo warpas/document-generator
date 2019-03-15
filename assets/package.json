@@ -14,6 +14,7 @@
     "brunch": "^2.10.17",
     "clean-css-brunch": "2.10.0",
     "growl": "1.10.5",
+    "lodash": ">=4.17.11",
     "uglify-js-brunch": "2.10.0"
   }
 }
