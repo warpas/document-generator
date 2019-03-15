@@ -6,7 +6,8 @@ defmodule DocumentGeneratorWeb.UserControllerTest do
     {:ok, user: insert(:user)}
   end
 
-  describe "user show action" do
+  # TODO: replace with useful tests
+  describe "show/2" do
     test "should succeed with valid ID", %{conn: conn, user: user} do
       conn = get(conn, "/users/#{user.uuid}")
 
