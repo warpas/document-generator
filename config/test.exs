@@ -11,7 +11,6 @@ config :logger, level: :warn
 
 # Configure your database
 config :document_generator, DocumentGenerator.Repo,
-  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   database: "document_generator_test",
