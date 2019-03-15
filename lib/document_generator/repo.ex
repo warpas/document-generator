@@ -1,5 +1,7 @@
 defmodule DocumentGenerator.Repo do
-  use Ecto.Repo, otp_app: :document_generator
+  use Ecto.Repo,
+    otp_app: :document_generator,
+    adapter: Ecto.Adapters.Postgres
 
   @doc """
   Dynamically loads the repository url from the

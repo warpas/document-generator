@@ -4,8 +4,8 @@ defmodule DocumentGenerator.Mixfile do
   def project do
     [
       app: :document_generator,
-      version: "0.0.1",
-      elixir: "~> 1.6.6",
+      version: "0.0.2",
+      elixir: "~> 1.8.1",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -33,17 +33,19 @@ defmodule DocumentGenerator.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.3.3"},
-      {:phoenix_pubsub, "~> 1.0"},
-      {:phoenix_ecto, "~> 3.2"},
+      {:phoenix, "~> 1.4"},
+      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix_ecto, "~> 4.0"},
+      {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 2.10"},
-      {:phoenix_live_reload, "~> 1.0", only: :dev},
-      {:credo, "~> 0.9.0", only: [:dev, :test]},
-      {:ex_machina, "~> 2.2", only: :test},
+      {:phoenix_html, "~> 2.13"},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:credo, "~> 1.0", only: [:dev, :test]},
+      {:ex_machina, "~> 2.3", only: :test},
       {:dialyxir, "~> 1.0.0-rc.4", only: :dev, runtime: false},
-      {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"},
+      {:gettext, "~> 0.16"},
+      {:cowboy, "~> 2.0"},
+      {:jason, "~> 1.0"},
       {:uuid, "~> 1.1"}
     ]
   end
