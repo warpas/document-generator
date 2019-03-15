@@ -41,6 +41,7 @@ defmodule DocumentGenerator.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:credo, "~> 0.9.0", only: [:dev, :test]},
       {:ex_machina, "~> 2.2", only: :test},
+      {:dialyxir, "~> 1.0.0-rc.4", only: :dev, runtime: false},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:uuid, "~> 1.1"}
